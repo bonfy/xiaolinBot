@@ -57,6 +57,6 @@ for item in contents:
 
 ### 完整代码 
 
-补充模仿浏览器的Headers,详情见 [https://github.com/bonfy/xiaolinBot](https://github.com/bonfy/xiaolinBot)
+补充模仿浏览器的Headers,详情见 [https://github.com/bonfy/xiaolinBot](https://github.com/bonfy/xiaolinBot/tree/step1)
 
 
