@@ -46,13 +46,13 @@ for item in contents:
 
 ### 结果
 
-![]()
+![结果](https://github.com/bonfy/xiaolinBot/blob/master/screen/step1-1.gif)
 
 ### 简单分析
 
 1. 利用 requests.get 获得页面
 2. assert 断言，如果网络问题 访问不到就退出
-3. contents 利用 pyquery 获得所有文章 后续 读取 div class ＝ ’content‘的为文本内容 （这里没有处理图片后续的讲解中会完善）
+3. contents 利用 pyquery 获得所有文章 后续 读取 div class ＝ "content" 的为文本内容 （这里没有处理图片后续的讲解中会完善）
 4. print 输出
 
 ### 完整代码 
