@@ -9,7 +9,7 @@ Python3.5 最好使用venv
 * [requests](https://github.com/kennethreitz/requests) : 一个封装了HTTP服务的python库
 * [pyquery](https://github.com/gawel/pyquery) : 类似Jquery，使用非常方便
 
-```cmd
+```bash
 $ pip install requests
 $ pip install pyquery
 ```
