@@ -82,7 +82,7 @@ __author__ = 'BONFY CHEN <foreverbonfy@163.com>'
 ####################
 
 def qiushi():
-    url = 'http://www.qiushibaike.com/pic/'
+    url = 'http://www.qiushibaike.com/'
     page = GetPage(url)
     d = pq(page)
     contents = d("div .article")
