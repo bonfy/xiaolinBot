@@ -109,7 +109,7 @@ if __name__ == '__main__':
 
 ### 运行结果：
 
-![结果](https://github.com/bonfy/xiaolinBot/blob/master/screen/step2-1.gif)
+![结果](https://github.com/bonfy/xiaolinBot/blob/master/screen/step2-2.gif)
 
 
 ## PEP8
@@ -120,9 +120,9 @@ $ pep8 xiaolinBot
 ```
 然后如果有不符合规范的代码，会显示提示，然后去更改就行了
 
-![PEP8](https://github.com/bonfy/xiaolinBot/blob/master/screen/step2-2.gif)
+![PEP8](https://github.com/bonfy/xiaolinBot/blob/master/screen/step2-1.gif)
 
 
 ## 完整代码 
 
-补充模仿浏览器的Headers,详情见 [https://github.com/bonfy/xiaolinBot](https://github.com/bonfy/xiaolinBot/tree/step2)
+详情见 [https://github.com/bonfy/xiaolinBot](https://github.com/bonfy/xiaolinBot/tree/step2)
