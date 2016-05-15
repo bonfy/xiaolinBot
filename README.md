@@ -2,7 +2,11 @@
 
 ## 项目简介
 
-xiaolinBot(Twitter  @笑林)： 获取网络的笑话集锦，并推送到 Twitter
+xiaolinBot(Twitter  [@xiaolintemple](https://twitter.com/xiaolintemple))： 获取网络的笑话集锦，并推送到 Twitter
+
+## 截图
+
+![结果](https://github.com/bonfy/xiaolinBot/blob/master/screen/xiaolin.png)
 
 ## 项目讲解
 
