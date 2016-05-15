@@ -1,26 +1,9 @@
 # coding: utf-8
 
-import requests
 from pyquery import PyQuery as pq
+from utils.common import GetMedia, GetPage
 
 __author__ = 'BONFY CHEN <foreverbonfy@163.com>'
-
-####################
-#
-# Consts
-#
-####################
-
-PROXIES = None
-HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1)'
-                  ' AppleWebKit/537.36 (KHTML, like Gecko) '
-                  'Chrome/38.0.2125.122 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,'
-              'application/xml;q=0.9,image/webp,*/*;q=0.8',
-    'Accept-Encoding': 'gzip,deflate,sdch',
-    'Accept-Language': 'zh-CN,zh;q=0.8'
-}
 
 
 ####################
@@ -29,16 +12,27 @@ HEADERS = {
 #
 ####################
 
-def main():
-    SITE = 'http://www.qiushibaike.com/'
-    r = requests.get(SITE, proxies=PROXIES, headers=HEADERS)
-    assert r.status_code == 200
-    d = pq(r.text)
+def qiushi():
+    url = 'http://www.qiushibaike.com/pic/'
+    page = GetPage(url)
+    d = pq(page)
     contents = d("div .article")
     for item in contents:
         i = pq(item)
+        pic_url = i("div .thumb img").attr.src
         content = i("div .content").text()
-        print(content)
+        id = i.attr.id
+        if pic_url:
+            pic_path = GetMedia(pic_url)
+            print('pic - {id}: {content} \npic下载到{pic_path}'.format(
+                id=id, content=content, pic_path=pic_path))
+        else:
+            print('text - {id}: {content}'.format(id=id, content=content))
+
+
+def main():
+    qiushi()
+
 
 if __name__ == '__main__':
     main()
