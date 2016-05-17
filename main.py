@@ -2,6 +2,8 @@
 
 from pyquery import PyQuery as pq
 from utils.common import GetMedia, GetPage
+from importlib import import_module
+
 
 __author__ = 'BONFY CHEN <foreverbonfy@163.com>'
 
@@ -11,6 +13,23 @@ __author__ = 'BONFY CHEN <foreverbonfy@163.com>'
 # main function
 #
 ####################
+
+SITES = {
+    'qiubai': 'http://www.qiushibaike.com/',
+    'baisi': 'http://www.budejie.com/'
+}
+
+
+def AnyTransfer(key, sites=SITES):
+    m = import_module('.'.join(['extractors', key]))
+    url = sites[key]
+    m.transfer(url)
+
+
+def main():
+    for (k, v) in SITES.items():
+        AnyTransfer(k)
+
 
 def qiushi():
     url = 'http://www.qiushibaike.com/'
@@ -28,10 +47,6 @@ def qiushi():
                 id=id, content=content, pic_path=pic_path))
         else:
             print('text - {id}: {content}'.format(id=id, content=content))
-
-
-def main():
-    qiushi()
 
 
 if __name__ == '__main__':
