@@ -13,7 +13,6 @@ def TransferPageToData_baisi(url):
         video_id = i("div .j-video-c").attr('data-id')
         pic_id = i("div .j-r-list-c-img img").attr('data-original')
         if video_id:
-            print('video: ' + video_id)
             video_des = i("div .j-video").attr('data-mp4')
             video_path = GetMedia(video_des, media_type='video')
             dct = {
@@ -22,9 +21,9 @@ def TransferPageToData_baisi(url):
                 "type": "video",
                 "mediapath": video_path
             }
+            print('baisi_video: ', video_id, '--下载到video文件夹:', video_path)
             results.append(dct)
         elif pic_id:
-            print('pic: ' + pic_id)
             pic_path = GetMedia(pic_id)
 
             dct = {
@@ -34,6 +33,7 @@ def TransferPageToData_baisi(url):
                 "mediapath": pic_path
             }
             results.append(dct)
+            print('baisi_pic: ', pic_id, '--下载到pic文件夹：', pic_path)
     return results
 
 

@@ -10,20 +10,23 @@ def TransferPageToData_qiubai(url):
     for item in contents:
         i = pq(item)
         pic_url = i("div .thumb img").attr.src
+        content = i("div .content").text()
+        qiubai_id = i.attr.id
+        print("qiubai:", qiubai_id)
         if pic_url:
             pic_path = GetMedia(pic_url)
             dct = {
-                'id': i.attr.id,
+                'id': qiubai_id,
                 'type': 'pic',
                 'mediapath': pic_path,
-                'content': i("div .content").text()
+                'content': content
             }
         else:
             dct = {
-                'id': i.attr.id,
+                'id': qiubai_id,
                 'type': 'text',
                 # 'mediapath': '',
-                'content': i("div .content").text()
+                'content': content
             }
         results.append(dct)
     return results
