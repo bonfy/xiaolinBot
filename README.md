@@ -10,7 +10,7 @@ xiaolinBot(Twitter  [@xiaolintemple](https://twitter.com/xiaolintemple))： 获�
 
 | Step  | Title  | Code  |
 | :-------------------:  | :-------------------:  | :-------------------:  |
-| Step 0    | [概述](https://github.com/bonfy/xiaolinBot/blob/master/Lessons/Step0.md)    |       |
-| Step 1    | [最简爬虫](https://github.com/bonfy/xiaolinBot/blob/master/Lessons/Step1.md) |   [Step1代码](https://github.com/bonfy/xiaolinBot/tree/step1)   |
-| Step 2    | [代码优化](https://github.com/bonfy/xiaolinBot/blob/master/Lessons/Step2.md) |  [Step2代码](https://github.com/bonfy/xiaolinBot/tree/step2)  |
-| Step 3    | [适配器](https://github.com/bonfy/xiaolinBot/blob/master/Lessons/Step3.md)   |  [Step3代码](https://github.com/bonfy/xiaolinBot/tree/step3)  |
+| Step 0    | [概   述](https://github.com/bonfy/xiaolinBot/blob/master/Lessons/Step0.md)    |       |
+| Step 1    | [最简爬虫](https://github.com/bonfy/xiaolinBot/blob/master/Lessons/Step1.md) |   [Step 1 代码](https://github.com/bonfy/xiaolinBot/tree/step1)   |
+| Step 2    | [代码优化](https://github.com/bonfy/xiaolinBot/blob/master/Lessons/Step2.md) |  [Step 2 代码](https://github.com/bonfy/xiaolinBot/tree/step2)  |
+| Step 3    | [适 配 器](https://github.com/bonfy/xiaolinBot/blob/master/Lessons/Step3.md)   |  [Step 3 代码](https://github.com/bonfy/xiaolinBot/tree/step3)  |
