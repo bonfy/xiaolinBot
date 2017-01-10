@@ -36,7 +36,7 @@ def GetPage(url, proxies=PROXIES, headers=HEADERS):
 
 def GetMedia(
         url, proxies=PROXIES, headers=HEADERS, chunk_size=512,
-        media_type='pic'):
+        media_type='image'):
     r = requests.get(url, proxies=proxies, headers=headers, stream=True)
     filename = 'download/' + media_type + '/' + os.path.basename(url)
     with open(filename, 'wb') as fd:

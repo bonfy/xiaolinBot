@@ -1,6 +1,7 @@
 # coding: utf-8
 
 from importlib import import_module
+import os
 
 
 __author__ = 'BONFY CHEN <foreverbonfy@163.com>'
@@ -32,7 +33,18 @@ def PrepareData():
     return results
 
 
+def CheckFolder():
+    """检查文件夹，没有就创建
+
+       检查 Folder: download/video & download/image
+    """
+    if not os.path.exists('download/video'):
+        os.makedirs('download/video')
+    if not os.path.exists('download/image'):
+        os.makedirs('download/image')
+
 def main():
+    CheckFolder()
     print(PrepareData())
 
 
